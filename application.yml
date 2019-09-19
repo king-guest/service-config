@@ -4,7 +4,7 @@ spring:
       - dev
 ---
 spring:
-  profiles: dev                   #开发环�?
+  profiles: dev                   #开发环境
   application:
     name: service-config-dev
     
