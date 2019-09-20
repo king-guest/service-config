@@ -2,7 +2,6 @@ server:
   port: 7004
 
 spring:
-  profiles: dev
   application:
     name: service-consumer-hystrix-config-client
 
@@ -10,3 +9,9 @@ eureka:
   client:
     service-url: 
       defaultZone: http://eureka9003.com:9003/eureka/,http://eureka9002.com:9002/eureka/,http://eureka9001.com:9001/eureka/
+  instance:
+    instance-id: service-consumer-hystrix-config-client   
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
